@@ -1,9 +1,6 @@
 #pragma once
-
+#include "stpch.h"
 #include "Sloth/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Sloth {
 	// Events in Sloth are currently blocking, meaning when an event occurs it

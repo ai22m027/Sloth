@@ -1,3 +1,6 @@
 [submodule "Sloth/vendor/spdlog"]
 	path = Sloth/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "vendor/GLFW"]
+	path = vendor/GLFW
+	url = https://github.com/TheCherno/glfw

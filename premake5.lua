@@ -49,7 +49,7 @@ project "Sloth"
 
     filter "system:windows"
         cppdialect "C++17"
-        staticruntime "On"
+        staticruntime "Off" -- set to "Off" to enabel Mulithreaded DLL or Multithreaded Debug DLL
         systemversion "latest"
 
         defines 

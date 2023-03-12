@@ -7,6 +7,12 @@
     <Filter Include="Sloth\Events">
       <UniqueIdentifier>{73CBD2C9-5F2E-626E-08B4-9A24F4F52DF1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{f0f0f3a5-d09c-4b28-8657-eff6903c8a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{d482126f-240b-42ff-af9f-9dd858f0046b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Sloth.h" />
@@ -35,6 +41,12 @@
       <Filter>Sloth</Filter>
     </ClInclude>
     <ClInclude Include="src\stpch.h" />
+    <ClInclude Include="Window.h">
+      <Filter>Sloth</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Sloth\Application.cpp">
@@ -44,5 +56,8 @@
       <Filter>Sloth</Filter>
     </ClCompile>
     <ClCompile Include="src\stpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

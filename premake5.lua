@@ -13,7 +13,7 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories realtive to root folder (solution directory)
 IncludeDir = {}
-IncludeDir["GLFW"] = "Sloth/vendor/GLFW/include"
+IncludeDir["GLFW"] = "vendor/GLFW/include" --something wrong here
 
 include "vendor/GLFW"
 

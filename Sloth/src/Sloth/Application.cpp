@@ -1,6 +1,6 @@
 #include "stpch.h"
 #include "Application.h"
-#include "Sloth/Events/ApplicationEvent.h"
+
 #include "Sloth/Log.h"
 
 namespace Sloth {
@@ -18,8 +18,12 @@ namespace Sloth {
 	}
 
 	void Application::OnEvent(Event& e) {
-		ST_CORE_INFO("{0}",e);
+		EventDispatcher dispatcher(e);
+		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
+
+		ST_CORE_TRACE("{0}",e);
 	}
+
 
 	void Application::Run() {
 		while (true)
@@ -29,5 +33,11 @@ namespace Sloth {
 				m_Window->OnUpdate();
 			}
 		}
+	}
+
+	bool Application::OnWindowClose(WindowCloseEvent& e)
+	{
+		m_Running = false;
+		return true;
 	}
 }

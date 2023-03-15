@@ -21,7 +21,7 @@ namespace Sloth {
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClose));
 
-		ST_CORE_TRACE("{0}",e);
+		ST_CORE_FATAL("{0}",e);
 	}
 
 
